@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>index</title>
+</head>
+<body>
+	<section>
+		<div class="mt-5 cover">
+			<h1 class="text-light">Welcome to EncrypDt</h1>
+			<a th:href="@{/encrypt}" class="btn btn-outline-light">Encrypt Your File</a>
+		</div>
+		<h2 class="mt-2">How it's works - </h2>
+		<div class="row mb-3">
+			<div class="col-md-6 col-sm-12">
+				<img class="img-fluid" src="/img/encryption.png" alt="encryption" />
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<img class="img-fluid" src="/img/decryption.png" alt="decryption" />
+			</div>
+		</div>
+	</section>
+</body>
+</html>

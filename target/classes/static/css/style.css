@@ -1,0 +1,19 @@
+.navbar-custom{
+	background-color: #1C9A71FF;
+}
+.cover{
+	background-image: url("/img/cover.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid black;
+	height: 300px;
+	text-align: center;	
+}
+.cover h1{
+	margin-top: 70px;
+}
+footer{
+	padding: 5px 0px;
+	color: yellow;
+}
