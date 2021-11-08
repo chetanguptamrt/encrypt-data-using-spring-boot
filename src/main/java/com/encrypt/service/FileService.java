@@ -47,11 +47,11 @@ public class FileService {
 		String[] split = file.getOriginalFilename().split("\\.");
 		String extension = split[split.length-1];
 		//save file
-		Files.copy(file.getInputStream(), Paths.get( 
-				new ClassPathResource("static").getFile().getAbsolutePath()+
-				File.separator+"img"+File.separator+"data"+
-				File.separator+session+"."+extension),
-				StandardCopyOption.REPLACE_EXISTING);
+		//Files.copy(file.getInputStream(), Paths.get( 
+		//		new ClassPathResource("static").getFile().getAbsolutePath()+
+		//		File.separator+"img"+File.separator+"data"+
+		//		File.separator+session+"."+extension),
+		//		StandardCopyOption.REPLACE_EXISTING);
 		//create object
 		EncryptHelper encryptHelper = new EncryptHelper();
 		encryptHelper.setPassword(bytePassword);
